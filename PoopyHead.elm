@@ -57,9 +57,9 @@ update msg model =
                     let
                         slimeA_xVelocity =
                             if signal == 65 then
-                                -10
+                                -20
                             else if signal == 68 then
-                                10
+                                20
                             else
                                 slimeA.xVelocity
 
@@ -83,9 +83,9 @@ update msg model =
                     let
                         slimeB_xVelocity =
                             if signal == 37 then
-                                -10
+                                -20
                             else if signal == 39 then
-                                10
+                                20
                             else
                                 slimeB.xVelocity
 
@@ -112,14 +112,14 @@ update msg model =
                 if signal == 65 || signal == 68 then
                     let
                         slimeA_xVelocity =
-                            if slimeA.xVelocity == 10 then
+                            if slimeA.xVelocity == 20 then
                                 if signal == 65 then
                                     slimeA.xVelocity
                                 else if signal == 68 then
                                     0
                                 else
                                     slimeA.xVelocity
-                            else if slimeA.xVelocity == -10 then
+                            else if slimeA.xVelocity == -20 then
                                 if signal == 65 then
                                     0
                                 else if signal == 68 then
@@ -139,14 +139,14 @@ update msg model =
                 else if signal == 37 || signal == 39 then
                     let
                         slimeB_xVelocity =
-                            if slimeB.xVelocity == 10 then
+                            if slimeB.xVelocity == 20 then
                                 if signal == 37 then
                                     slimeB.xVelocity
                                 else if signal == 39 then
                                     0
                                 else
                                     slimeB.xVelocity
-                            else if slimeB.xVelocity == -10 then
+                            else if slimeB.xVelocity == -20 then
                                 if signal == 37 then
                                     0
                                 else if signal == 39 then
