@@ -10448,7 +10448,7 @@ var _user$project$PoopyHead$update = F2(
 				var _p3 = _p2._0;
 				if (_elm_lang$core$Native_Utils.eq(_p3, 65) || (_elm_lang$core$Native_Utils.eq(_p3, 68) || _elm_lang$core$Native_Utils.eq(_p3, 87))) {
 					var slimeA_yVelocity = _elm_lang$core$Native_Utils.eq(_p3, 87) ? ((!_elm_lang$core$Native_Utils.eq(slimeA.yAxis, 600)) ? slimeA.yVelocity : -9) : slimeA.yVelocity;
-					var slimeA_xVelocity = _elm_lang$core$Native_Utils.eq(_p3, 65) ? -5 : (_elm_lang$core$Native_Utils.eq(_p3, 68) ? 5 : slimeA.xVelocity);
+					var slimeA_xVelocity = _elm_lang$core$Native_Utils.eq(_p3, 65) ? -10 : (_elm_lang$core$Native_Utils.eq(_p3, 68) ? 10 : slimeA.xVelocity);
 					var newSlimeA = _elm_lang$core$Native_Utils.update(
 						slimeA,
 						{xVelocity: slimeA_xVelocity, yVelocity: slimeA_yVelocity});
@@ -10459,7 +10459,7 @@ var _user$project$PoopyHead$update = F2(
 				} else {
 					if (_elm_lang$core$Native_Utils.eq(_p3, 37) || (_elm_lang$core$Native_Utils.eq(_p3, 38) || _elm_lang$core$Native_Utils.eq(_p3, 39))) {
 						var slimeB_yVelocity = _elm_lang$core$Native_Utils.eq(_p3, 38) ? ((!_elm_lang$core$Native_Utils.eq(slimeB.yAxis, 600)) ? slimeB.yVelocity : -9) : slimeB.yVelocity;
-						var slimeB_xVelocity = _elm_lang$core$Native_Utils.eq(_p3, 37) ? -5 : (_elm_lang$core$Native_Utils.eq(_p3, 39) ? 5 : slimeB.xVelocity);
+						var slimeB_xVelocity = _elm_lang$core$Native_Utils.eq(_p3, 37) ? -10 : (_elm_lang$core$Native_Utils.eq(_p3, 39) ? 10 : slimeB.xVelocity);
 						var newSlimeB = _elm_lang$core$Native_Utils.update(
 							slimeB,
 							{xVelocity: slimeB_xVelocity, yVelocity: slimeB_yVelocity});
@@ -10474,7 +10474,7 @@ var _user$project$PoopyHead$update = F2(
 			case 'GetUp':
 				var _p4 = _p2._0;
 				if (_elm_lang$core$Native_Utils.eq(_p4, 65) || _elm_lang$core$Native_Utils.eq(_p4, 68)) {
-					var slimeA_xVelocity = _elm_lang$core$Native_Utils.eq(slimeA.xVelocity, 5) ? (_elm_lang$core$Native_Utils.eq(_p4, 65) ? slimeA.xVelocity : (_elm_lang$core$Native_Utils.eq(_p4, 68) ? 0 : slimeA.xVelocity)) : (_elm_lang$core$Native_Utils.eq(slimeA.xVelocity, -5) ? (_elm_lang$core$Native_Utils.eq(_p4, 65) ? 0 : (_elm_lang$core$Native_Utils.eq(_p4, 68) ? slimeA.xVelocity : slimeA.xVelocity)) : slimeA.xVelocity);
+					var slimeA_xVelocity = _elm_lang$core$Native_Utils.eq(slimeA.xVelocity, 10) ? (_elm_lang$core$Native_Utils.eq(_p4, 65) ? slimeA.xVelocity : (_elm_lang$core$Native_Utils.eq(_p4, 68) ? 0 : slimeA.xVelocity)) : (_elm_lang$core$Native_Utils.eq(slimeA.xVelocity, -10) ? (_elm_lang$core$Native_Utils.eq(_p4, 65) ? 0 : (_elm_lang$core$Native_Utils.eq(_p4, 68) ? slimeA.xVelocity : slimeA.xVelocity)) : slimeA.xVelocity);
 					var newSlimeA = _elm_lang$core$Native_Utils.update(
 						slimeA,
 						{xVelocity: slimeA_xVelocity});
@@ -10484,7 +10484,7 @@ var _user$project$PoopyHead$update = F2(
 					return {ctor: '_Tuple2', _0: newModel, _1: _elm_lang$core$Platform_Cmd$none};
 				} else {
 					if (_elm_lang$core$Native_Utils.eq(_p4, 37) || _elm_lang$core$Native_Utils.eq(_p4, 39)) {
-						var slimeB_xVelocity = _elm_lang$core$Native_Utils.eq(slimeB.xVelocity, 5) ? (_elm_lang$core$Native_Utils.eq(_p4, 37) ? slimeB.xVelocity : (_elm_lang$core$Native_Utils.eq(_p4, 39) ? 0 : slimeB.xVelocity)) : (_elm_lang$core$Native_Utils.eq(slimeB.xVelocity, -5) ? (_elm_lang$core$Native_Utils.eq(_p4, 37) ? 0 : (_elm_lang$core$Native_Utils.eq(_p4, 39) ? slimeB.xVelocity : slimeB.xVelocity)) : slimeB.xVelocity);
+						var slimeB_xVelocity = _elm_lang$core$Native_Utils.eq(slimeB.xVelocity, 10) ? (_elm_lang$core$Native_Utils.eq(_p4, 37) ? slimeB.xVelocity : (_elm_lang$core$Native_Utils.eq(_p4, 39) ? 0 : slimeB.xVelocity)) : (_elm_lang$core$Native_Utils.eq(slimeB.xVelocity, -10) ? (_elm_lang$core$Native_Utils.eq(_p4, 37) ? 0 : (_elm_lang$core$Native_Utils.eq(_p4, 39) ? slimeB.xVelocity : slimeB.xVelocity)) : slimeB.xVelocity);
 						var newSlimeB = _elm_lang$core$Native_Utils.update(
 							slimeB,
 							{xVelocity: slimeB_xVelocity});
